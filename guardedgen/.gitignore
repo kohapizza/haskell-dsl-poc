@@ -1,0 +1,29 @@
+# Cabal build artifacts
+dist-newstyle/
+dist/
+.cabal-sandbox/
+cabal.sandbox.config
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+
+# Stack (念のため)
+.stack-work/
+
+# APIキー・環境変数
+.env
+*.env
+secrets.*
+
+# macOS
+.DS_Store
+
+# エディタ
+.vscode/
+.idea/
+*.swp
+*~
+
+# CLAUDE.md（内部メモ）
+CLAUDE.md

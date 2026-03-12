@@ -1,0 +1,63 @@
+cabal-version: 3.0
+name:          guardedgen
+version:       0.1.0.0
+build-type:    Simple
+
+library
+  hs-source-dirs:   src
+  default-language: Haskell2010
+  exposed-modules:
+    GuardedGen.DSL.AST
+    GuardedGen.DSL.Parser
+    GuardedGen.DSL.CodeGen
+    GuardedGen.LLM.Prompt
+    GuardedGen.LLM.Client
+    GuardedGen.Verify.Runner
+    GuardedGen.Verify.Parser
+    GuardedGen.Loop
+  build-depends:
+    base             >= 4.14  && < 5,
+    megaparsec       >= 9.0   && < 10,
+    text             >= 1.2   && < 3,
+    containers,
+    aeson            >= 2.0,
+    bytestring,
+    http-conduit     >= 2.3,
+    http-client      >= 0.7,
+    http-client-tls  >= 0.3,
+    http-types,
+    vector,
+    process,
+    temporary,
+    directory,
+    filepath
+
+executable guardedgen
+  hs-source-dirs:   src
+  main-is:          Main.hs
+  default-language: Haskell2010
+  other-modules:
+    GuardedGen.DSL.AST
+    GuardedGen.DSL.Parser
+    GuardedGen.DSL.CodeGen
+    GuardedGen.LLM.Prompt
+    GuardedGen.LLM.Client
+    GuardedGen.Verify.Runner
+    GuardedGen.Verify.Parser
+    GuardedGen.Loop
+  build-depends:
+    base             >= 4.14  && < 5,
+    megaparsec       >= 9.0   && < 10,
+    text             >= 1.2   && < 3,
+    containers,
+    aeson            >= 2.0,
+    bytestring,
+    http-conduit     >= 2.3,
+    http-client      >= 0.7,
+    http-client-tls  >= 0.3,
+    http-types,
+    vector,
+    process,
+    temporary,
+    directory,
+    filepath
