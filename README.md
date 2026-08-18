@@ -6,7 +6,7 @@
 
 ## 概要
 
-GuardedGenは、LLMを「候補生成器」として扱い、正しさの判断をLiquid Haskell（SMTソルバーZ3）による機械検証に委ねるコード生成基盤です。
+GuardedGenは、LLMを「候補生成器」として扱い、正しさの判断をLiquid Haskell（SMTソルバーZ3）による機械検証に委ねるコード生成基盤。
 
 ```
 [人間] 仕様DSLで仕様を書く
